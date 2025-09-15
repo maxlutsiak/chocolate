@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./ccs/styles.css" />
+    <title>Simply Chocolate</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="page-header">
+        <div class="container page-header__container">
+            <nav class="page-nav">
+                <a class="logo page-header__logo" href="./index.html"><span class="logo__text">
+                        <span class="logo__part">SIMPLY </span>Chocolate
+                    </span>
+                    <svg class="logo__icon" width="21" height="21">
+                        <use href="./images/img/icons.svg#logo-icon"></use>
+                    </svg>
+                </a>
+                <ul class="nav-list page-header__menu">
+                    <li class="nav-list__item">
+                        <a href="./index.html" class="nav-list__link nav-list__link-background-light current">Home</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#made" class="nav-list__link nav-list__link-background-light">How it’s made?</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#reviews" class="nav-list__link nav-list__link-background-light">Chocolate is loved</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="social-media-list page-header__media-list">
+                <li class="social-media-list__item">
+                    <a href="" class="social-media-list__link" target="_blank">
+                        <svg class="social-media-list__icon" width="24" height="24">
+                            <use href="./images/img/icons.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-media-list__item">
+                    <a href="" class="social-media-list__link" target="_blank">
+                        <svg class="social-media-list__icon" width="24" height="24">
+                            <use href="./images/img/icons.svg#twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <button class="burger" type="button" data-menu-open>
+                <svg class="burger__icon" width="28" height="28">
+                    <use href="./images/img/icons.svg#burger"></use>
+                </svg>
+            </button>
+        </div>
+        <!-- mobile menu -->
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn" type="button" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="28" height="28">
+                        <use href="./images/img/icons.svg#close-icon"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-nav">
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="./index.html"
+                                class="nav-list__link nav-list__link-background-dark current">Home</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#made" class="nav-list__link nav-list__link-background-dark">How it’s made?</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#reviews" class="nav-list__link nav-list__link-background-dark">Chocolate is
+                                loved</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="social-media-list">
+                    <li class="social-media-list__item">
+                        <a href="" class="social-media-list__link" target="_blank">
+                            <svg class="social-media-list__icon" width="22" height="22">
+                                <use href="./images/img/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-media-list__item">
+                        <a href="" class="social-media-list__link" target="_blank">
+                            <svg class="social-media-list__icon" width="22" height="22">
+                                <use href="./images/img/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero__container">
+                <h1 class="main-title">
+                    Treat yourself or a loved one to our finest ingredients for a moment
+                    of pure delight!
+                </h1>
+                <div class="hero__wrapper">
+                    <ul class="hero-list">
+                        <li class="hero-list__item">
+                            <button class="hero-list__btn hero-list__btn-1" type="button">
+                                Buy now
+                            </button>
+                        </li>
+                        <li class="hero-list__item">
+                            <button class="hero-list__btn hero-list__btn-2" type="button">
+                                How it’s made
+                            </button>
+                        </li>
+                    </ul>
+                    <a class="hero-scroll-down" href="#footer">scroll down
+                        <span class="hero-scroll-down__icon-wrapper">
+                            <svg class="hero-scroll-down__icon" width="10" height="8">
+                                <use href="./images/img/icons.svg#hero-scroll-icon"></use>
+                            </svg> </span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFITS -->
+        <section class="benefits">
+            <div class="container benefits__container">
+                <h2 class="visually-hidden">Benefits</h2>
+                <ul class="benefits-list">
+                    <li class="benefits-list__item">
+                        <div class="benefits-list__icon-wrapper">
+                            <svg class="benefits-list__icon" width="32" height="32">
+                                <use href="./images/img/icons.svg#chocolate-bar"></use>
+                            </svg>
+                        </div>
+                        <h3 class="benefits-list__title">Unsurpassed taste</h3>
+                        <p class="benefits-list__description">
+                            Crafted with the finest quality cocoa beans and a dedication to
+                            perfection, each bite is a decadent experience that simply
+                            cannot be matched. Savor the richness and complexity of our
+                            Unsurpassed Taste and discover a new level of chocolate bliss.
+                        </p>
+                    </li>
+                    <li class="benefits-list__item">
+                        <div class="benefits-list__icon-wrapper">
+                            <svg class="benefits-list__icon" width="32" height="32">
+                                <use href="./images/img/icons.svg#coin"></use>
+                            </svg>
+                        </div>
+                        <h3 class="benefits-list__title">Affordable price</h3>
+                        <p class="benefits-list__description">
+                            Indulge in high-quality chocolate without breaking the bank with
+                            Simply Chocolate's selection of affordable treats. Enjoy
+                            mouth-watering truffles and velvety chocolate bars without
+                            sacrificing taste or quality. browse our selection and indulge
+                            in affordable luxury today.
+                        </p>
+                    </li>
+                    <li class="benefits-list__item">
+                        <div class="benefits-list__icon-wrapper">
+                            <svg class="benefits-list__icon" width="32" height="32">
+                                <use href="./images/img/icons.svg#spoon"></use>
+                            </svg>
+                        </div>
+                        <h3 class="benefits-list__title">Own production</h3>
+                        <p class="benefits-list__description">
+                            We take pride in our own production process, ensuring that every
+                            step is carefully crafted to perfection. From selecting the
+                            finest ingredients to handcrafting each piece, our attention to
+                            detail is evident in every bite.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- DESCRIPTIONS-->
+        <section class="description">
+            <div class="container description__container">
+                <h2 class="second-title description__second-title">
+                    It all adds up to one exceptional
+                    <span class="second-title__part">taste</span> sensation
+                </h2>
+                <p class="description__text">
+                    At Simply Chocolate, we believe that the secret to exceptional
+                    chocolate is in the details. From the sourcing of the finest
+                    ingredients to the careful crafting of each individual piece, every
+                    step of our process adds up to one exceptional taste sensation.
+                </p>
+                <ul class="description-list">
+                    <li class="description-list__item">
+                        <div class="description-list__wrapper description-list__orange-wrapper">
+                            <picture class="description-list__img">
+                                <source media="(min-width: 1168px)" srcset="
+                    ./images/img/chocolatelate-desk.webp-min.png 1x,
+                    ./images/img/chocolatelate-desk.webp@2x-min.png 2x
+                    " />
+                                <source media="(max-width: 1167px)" srcset="
+                    ./images/img/chocolatelate-mob-tab.webp-min.png 1x,
+                    ./images/img/chocolatelate-mob-tab.webp@2x-min.png 2x
+                    " />
+                                <img srcset="./images/img/chocolatelate-desk.webp@2x-min.png "
+                                    src="./images/img/chocolatelate-desk.webp" alt="Milk chocolate" />
+                            </picture>
+                            <h3 class="description-list__title description-list__white-title">
+                                Milk chocolate
+                            </h3>
+                        </div>
+                    </li>
+                    <li class="description-list__item">
+                        <div class="description-list__wrapper description-list__white-wrapper">
+                            <picture class="description-list__img">
+                                <source media="(min-width: 1168px)" srcset="
+                    ./images/img/milk-desk.webp-min.png 1x,
+                    ./images/img/milk-desk.webp@2x-min.png 2x
+                    " />
+                                <source media="(max-width: 1167px)" srcset="
+                    ./images/img/milk-mob-tab.webp-min.png 1x,
+                    ./images/img/milk-mob-tab.webp@2x-min.png 2x
+                    " />
+                                <img srcset="./images/img/milk-desk.webp-min.png 1x" src="./images/img/milk-desk.webp"
+                                    alt="Milk" />
+                            </picture>
+                            <h3 class="description-list__title description-list__black-title">
+                                Milk
+                            </h3>
+                        </div>
+                    </li>
+                    <li class="description-list__item">
+                        <div class="description-list__wrapper description-list__dark-wrapper">
+                            <picture class="description-list__img">
+                                <source media="(min-width: 1168px)" srcset="
+                    ./images/img/nuts-desk.webp-min.png 1x,
+                    ./images/img/nuts-desk.webp@2x-min.png 2x
+                    " />
+                                <source media="(max-width: 1167px)" srcset="
+                    ./images/img/nuts-mob-tab.webp-min.png 1x,
+                    ./images/img/nuts-mob-tab.webp@2x-min.png 2x
+                    " />
+                                <img srcset="./images/img/nuts-desk.webp-min.png 1x" src="./images/img/nuts-desk.webp"
+                                    alt="Nuts" />
+                            </picture>
+                            <h3 class="description-list__title description-list__white-title">
+                                Nuts
+                            </h3>
+                        </div>
+                    </li>
+                    <li class="description-list__item">
+                        <div class="description-list__wrapper description-list__white-wrapper">
+                            <picture class="description-list__img">
+                                <source media="(min-width: 1168px)" srcset="
+                    ./images/img/semi-desk.webp-min.png 1x,
+                    ./images/img/semi-desk.webp@2x-min.png 2x
+                    " />
+                                <source media="(max-width: 1167px)" srcset="
+                    ./images/img/semi-mob-tab.webp-min.png 1x,
+                    ./images/img/semi-mob-tab.webp@2x-min.png 2x
+                    " />
+                                <img srcset="./images/img/semi-desk.webp-min.png 1x" src="./images/img/semi-desk.webp"
+                                    alt="Semi" />
+                            </picture>
+                            <h3 class="description-list__title description-list__black-title">
+                                Semi - sweet chocolate
+                            </h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- MAKING -->
+        <section class="making" id="made">
+            <div class="container making__container">
+                <h2 class="second-title making__title">
+                    How it’s <span class="second-title__part">made?</span>
+                </h2>
+                <div class="making__flex-wrapper">
+                    <div class="making__img-wrapper">
+                        <picture class="making__img">
+                            <source media="(min-width: 1168px)" srcset="
+                    ./images/img/made-img-desk-min.png 1x,
+                    ./images/img/made-img-desk@2x-min.png 2x
+                " />
+                            <source media="(min-width: 768px)" srcset="
+                    ./images/img/made-img-tab-min.png 1x,
+                    ./images/img/made-img-tab@2x-min.png 2x
+                " />
+                            <source media="(max-width: 767px)" srcset="
+                    ./images/img/made-img-mob-min.png  1x,
+                    ./images/img/made-img-mob@2x-min.png 2x
+                " />
+                            <img srcset="./images/img/made-img-desk-min.png 1x" src="./images/img/made-img-desk.jpg"
+                                alt="making chocolate" />
+                        </picture>
+                        <svg class="making__icon" width="35" height="35">
+                            <use href="./images/img/icons.svg#play"></use>
+                        </svg>
+                    </div>
+                    <div class="making__text-wrapper">
+                        <p class="making__text">
+                            Try our chocolates today and discover the perfect balance of
+                            flavor
+                        </p>
+                        <ul class="making__list">
+                            <li class="making__list-item">
+                                Heat the milk in a saucepan without bringing it to a boil. Add
+                                sugar and cocoa powder.
+                            </li>
+                            <li class="making__list-item">
+                                At the same time, prepare a water bath. Melt the butter on it.
+                            </li>
+                            <li class="making__list-item">
+                                "Mix" the milk mixture and already liquid butter. Mix
+                                thoroughly with a silicone spatula so that the mass becomes
+                                uniform and silky.
+                            </li>
+                            <li class="making__list-item">
+                                Heat the mixture over low heat, letting it barely boil.
+                            </li>
+                            <li class="making__list-item">
+                                Pour the chocolate into special containers (can be replaced
+                                with ice molds). Allow to cool and harden.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEEDBACK -->
+        <section class="feedback" id="reviews">
+            <div class="container feedback__container">
+                <h2 class="second-title feedback__title">
+                    <span class="second-title__part">Chocolate</span> is loved
+                </h2>
+                <ul class="feedback__list">
+                    <li class="feedback-list__item">
+                        <img class="feedback-list__img" srcset="./images/img/girl-1.webp@2x-min.png 2x"
+                            src="./images/img/girl-1.webp-min.png" alt="girl" width="80" height="80" />
+                        <div class="feedback-list__wrapper">
+                            <h3 class="feedback-list__name">Victoria Dobrzhanska</h3>
+                            <p class="feedback-list__comment">
+                                I love this chocolate bar. Perfect combination of light crispy
+                                wafer, covered in a thin layer chocolate.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="feedback-list__item mob__hidden-item">
+                        <img class="feedback-list__img" srcset="./images/img/man.webp@2x-min.png 2x"
+                            src="./images/img/man.webp-min.png" alt="man" width="80" height="80" />
+                        <div class="feedback-list__wrapper">
+                            <h3 class="feedback-list__name">Nazar Babenko</h3>
+                            <p class="feedback-list__comment">
+                                This chocolate confection is a delight! A delight! The wafer
+                                is light and crisp, the hazelnut cream is smooth, and the
+                                chocolate is good.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="feedback-list__item mob__hidden-item tab__hedden-item">
+                        <img class="feedback-list__img" srcset="./images/img/girl-2.webp@2x-min.png 2x"
+                            src="./images/img/girl-2.webp-min.png" alt="girl" width="80" height="80" />
+                        <div class="feedback-list__wrapper">
+                            <h3 class="feedback-list__name">Olena Kampusch</h3>
+                            <p class="feedback-list__comment">
+                                Chocolate is a family favourite treat. Love the delicious
+                                smooth chocolate and the creaminess inside. The wafer is soft
+                                but crunchy.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <img class="feedback__offer-banner" src="./images/img/offer-banner.png" alt="offer banner" width="80"
+                    height="13" />
+                <button class="feedback__btn" type="button" data-modal-open>
+                    Leave a review
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="page-footer" id="footer">
+        <div class="container footer__container">
+            <div class="footer__wrapper-first">
+                <p class="footer__text">
+                    <span class="footer-text__part">Chocolate</span> a delicious cure
+                    for a bad day
+                </p>
+                <div class="address-wrapper">
+                    <h3 class="address__title">Contact us</h3>
+                    <address class="address">
+                        <ul class="address-list">
+                            <li class="address-list__item">
+                                <a class="address-list__link" href="tel:+380684439426">+380 (68) 443-94-26</a>
+                            </li>
+                            <li class="address-list__item">
+                                <a class="address-list__link"
+                                    href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+            <div class="footer__wrapper-second">
+                <ul class="footer-nav">
+                    <li class="footer-nav__item">
+                        <a class="nav-list__link footer-nav__link nav-list__link-background-dark"
+                            href="./index.html">Home</a>
+                    </li>
+                    <li class="footer-na__item">
+                        <a class="nav-list__link footer-nav__link nav-list__link-background-dark" href="#made">How it’s
+                            made?</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="nav-list__link footer-nav__link nav-list__link-background-dark"
+                            href="#reviews">Chocolate is loved</a>
+                    </li>
+                </ul>
+                <form class="footer-form">
+                    <input class="footer-form__input" type="text" placeholder="Enter your email" />
+                    <button class="footer-form__button" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL WINDOW -->
+    <div class="backdrop" data-modal>
+        <div class="modal-windiw">
+            <button type="button" class="modal-window__close-btn" data-modal-close>
+                <svg class="modal-window__close-icon" width="24" height="24">
+                    <use href="./images/img/icons.svg#close-icon"></use>
+                </svg>
+            </button>
+            <p class="modal-window__text">
+                Leave a review <br />
+                about
+                <span class="modal-window__text-part">our chocolate</span>
+            </p>
+            <form class="modal-form">
+                <div class="modal-form__info-wrapper">
+                    <label class="modal-form__label" for="user-name">Name</label>
+                    <div class="modal-form__input-wrapper">
+                        <input class="modal-form__input" name="user-name" id="user-name" type="text" />
+                        <svg class="modal-form__inpu-icon" width="17" height="17">
+                            <use href="./images/img/icons.svg#user-icon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form__info-wrapper">
+                    <label class="modal-form__label" for="user-email">Email</label>
+                    <div class="modal-form__input-wrapper">
+                        <input class="modal-form__input" name="user-email" id="user-email" type="email" />
+                        <svg class="modal-form__inpu-icon" width="17" height="17">
+                            <use href="./images/img/icons.svg#phone-icon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form__info-wrapper">
+                    <label class="modal-form__label" for="user-phone">Phone number</label>
+                    <div class="modal-form__input-wrapper">
+                        <input class="modal-form__input" name="user-phone" id="user-phone" type="tel" />
+                        <svg class="modal-form__inpu-icon" width="17" height="17">
+                            <use href="./images/img/icons.svg#mail-icon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form__message-wrapper">
+                    <label class="modal-form__label" for="user-message">Comment</label>
+                    <textarea class="modal-form__message" name="user-message" id="user-message"
+                        placeholder="Enter text"></textarea>
+                </div>
+                <div class="modal-form__checkbox-wrapper">
+                    <input class="modal-form__checkbox visually-hidden" name="user-privacy" id="user-privacy"
+                        type="checkbox" value="true" />
+                    <label class="modal-form__checkbox-label" for="user-privacy">
+                        <span class="custom-checkbox">
+                            <svg class="custom-checkbox__icon" width="10" height="10">
+                                <use href="./images/img/icons.svg#checkbox-icon"></use>
+                            </svg>
+                        </span>
+                        <span class="policy">I accept the terms and conditions of the
+                            <a href="" class="policy__link" target="_blank">Privacy Policy</a></span>
+                    </label>
+                </div>
+                <button class="modal-form__sbm-btn" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
